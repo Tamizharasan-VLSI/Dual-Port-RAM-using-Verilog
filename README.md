@@ -50,9 +50,11 @@ Memory Declaration:
 ## 📁 Repository Contents
 | File | Description |
 |------|-------------|
-| `dual_port_ram.v` | RTL Verilog Code |
-| `tb.v` | Testbench Code |
-| `dump.vcd` | Optional waveform dump file |
+| `Design code.v` | RTL Verilog Code |
+| `TB.v` | Testbench Code |
+| `waveform.png` | waveform dump file |
+| `Output` | simulation output |
+| `Schematic` | schematic view |
 
 ---
 
