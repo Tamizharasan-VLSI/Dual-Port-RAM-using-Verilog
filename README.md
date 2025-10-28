@@ -45,29 +45,37 @@ Memory Declaration:
 6. Print full RAM content to console
 7. Generate waveform (`dump.vcd`)
 
-Console output example:
+---
 
+## 📁 Repository Contents
+| File | Description |
+|------|-------------|
+| `dual_port_ram.v` | RTL Verilog Code |
+| `tb.v` | Testbench Code |
+| `dump.vcd` | Optional waveform dump file |
 
 ---
 
-                ┌───────────────────────────────┐
-                │        Dual Port RAM          │
-                │                               │
-                │   ┌──────────┐    ┌────────┐  │
-clk ───────────▶│   │ Write/   │    │ Write/ │◀─ clk
-rst ───────────▶│   │ Read     │    │ Read   │◀─ rst
-                │   │ Logic A  │    │ Logic B│  │
-                │   └────┬─────┘    └────┬───┘  │
-                │        │               │       │
-addr_a ────────▶│   ┌────▼──────────────────┐   │
-data_a ────────▶│   │   Shared RAM Array    │   │
-a (R/W) ───────▶│   │ ram[0 … depth-1]      │   │
-                │   └────▲──────────────────┘   │
-                │        │               │       │
-out_a ─────────▶│   ┌────┴─────┐    ┌────┴───┐  │
-                │   │ Output A │    │ Output B│  │
-addr_b ────────▶│   └──────────┘    └────────┘  │
-data_b ────────▶│                               │
-b (R/W) ───────▶│                               │
-                └───────────────────────────────┘
+## 🛠 Tools Used
+- Verilog Simulator (EDA Playground/Xilinx Vivado)
 
+---
+
+## ✨ Future Improvements
+- Add Block Diagram
+- Add Read/Write mode configuration (Write-first, Read-first, No-change)
+- Add synchronous reset option
+
+---
+
+## 👩‍💻 Author
+**Tamizharasan**  
+VLSI Enthusiast | Digital Design Learner  
+More designs coming soon… 😊
+
+---
+
+
+
+
+        
